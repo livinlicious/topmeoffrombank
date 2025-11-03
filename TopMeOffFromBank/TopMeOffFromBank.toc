@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: TopMeOffFromBank
+## Notes: Automatically withdraws items from bank to maintain specified quantities.
+## Author: Livin
+## Version: 1.0
+## Dependencies:
+## SavedVariablesPerCharacter: bankItemsWanted
+TopMeOffFromBank.lua
+TopMeOffFromBank.xml

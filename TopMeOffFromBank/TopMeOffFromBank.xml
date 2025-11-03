@@ -1,0 +1,23 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\..\FrameXML\UI.xsd">
+	<Script file="TopMeOffFromBank.lua" />
+	<Frame name="TopMeOffFromBankLoadFrame" hidden="false">
+		<Scripts>
+			<OnLoad>
+				TopMeOffFromBank_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				TopMeOffFromBank_OnEvent();
+			</OnEvent>
+			<OnUpdate>
+				TopMeOffFromBank_OnUpdate();
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+	<GameTooltip name="TopMeOffFromBankTooltip" hidden="true" inherits="GameTooltipTemplate">
+		<Scripts>
+			<OnLoad>
+				this:SetOwner(this, "ANCHOR_NONE");
+			</OnLoad>
+		</Scripts>
+	</GameTooltip>
+</Ui>
